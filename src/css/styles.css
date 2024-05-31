@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+}
+
+:root {
+    --bg-color: #191f36;
+    --snd-bg-color: #262B40;
+    --text-color: #fff;
+    --main-color:#59B2F4;
+  }
+
+  body {
+    background: var(--bg-color);
+    color: var(--text-color);
+  }
+  section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+  }
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+  
+  
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-content h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+  
+  .home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+  }
+  
+  span {
+    color: var(--main-color);
+  }
+  
+  .home-content h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  
+  .home-img img {
+    width: 20vw;
+    /* max-height: 400px; */
+    animation: floatImage 4s ease-in-out infinite;
+    border-radius: 60%; /* Membuat gambar berbentuk elips */
+    border: 2px solid #59B2F4; /* Menambahkan tepi garis berwarna cerah */
+    box-shadow: 0 0 10px #59B2F4; /* Menambahkan efek bayangan dengan warna yang sama */
+  }
+  
+  @keyframes floatImage {
+    0%{
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(-2.4rem);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }
+  
+  .home-content p {
+    font-size: 1.6rem;
+  }
+  
+  .social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+  }
+  
+  .social-media a:hover {
+  background: var(--main-color);
+  color: var(--snd-bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
+  }
+  
+  .btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.6rem;
+  color: var(--bg-color);
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .5s ease;
+  }
+  
+  .btn:hover {
+    box-shadow: none;
+    background-color: #2c3c7f;
+    color: white;
+  }
+
+
+  
+
+/* pengaturan banner */
+.banner {
+    background: url("../images/jumbotron.jpg") 
+    no-repeat center center;
+    background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 20%; 
+    color: white; /* Warna teks diubah menjadi putih */
+}
+
+/* myproject*/
+.myProject {
+    background-color: white;
+    color: black;
+    border-radius: 10rem;
+}
+.lingkaran {
+    display: inline-block;
+    border-radius:50%;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    color: white;
+    background-color: #304b90
+}
+
+.lingkaran i{
+    position: relative;
+    top: 50px;
+    left: 4px;
+}
+
+.crop-img{
+    object-fit: cover;
+}
+
+.about-img{
+    object-fit: cover; 
+}
+
+.kontak{
+    background: url("https://wallpaperaccess.com/full/1867010.jpg") no-repeat center center;
+    background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    color: white;
+}
+
+
+/* MyHobbies */
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--snd-bg-color);
+    padding-top: 4rem; /* Menambahkan padding atas */
+    padding-bottom: 4rem; /* Menambahkan padding bawah */
+    
+  }
+  
+  /* Media query untuk tata letak responsif */
+  @media screen and (max-width: 768px) {
+    .myHobbies {
+      flex-direction: column; /* Mengubah tata letak menjadi kolom pada layar kecil */
+      text-align: center; /* Pusatkan konten saat tata letak menjadi kolom */
+      padding-left: 4%; /* Menyesuaikan padding kiri untuk layar kecil */
+      padding-right: 4%; /* Menyesuaikan padding kanan untuk layar kecil */
+    }
+  }
+  
+  
+  
+  .myHobbies-img img {
+    margin-bottom: 20px;
+    width: 35vw;
+    border-radius: 30%; /* Membuat gambar berbentuk elips */
+    border: 2px solid #59B2F4; /* Menambahkan tepi garis berwarna cerah */
+    box-shadow: 0 0 10px #59B2F4; /* Menambahkan efek bayangan dengan warna yang sama */
+  }
+  
+  .heading { 
+    text-align: center;
+    font-size: 4.5rem;
+  }
+
+  
+  
+  .myHobbies-content h2 {
+    text-align: left;
+    line-height: 1.2;
+  }
+  
+  .myHobbies-content h3 {
+    font-size: 2.6rem;
+  }
+  
+  .myHobbies-content {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+  }
+
+  .maps{
+    box-shadow: 0 0 40px #59B2F4; /* Menambahkan efek bayangan dengan warna yang sama */
+  }
+
+  footer {
+    background-color: black; /* Warna latar belakang footer */
+    color: #fff; /* Warna teks footer */
+    text-align: center; /* Pusatkan teks */
+    padding: 20px 0; /* Padding atas dan bawah 20px, padding kiri dan kanan 0 */
+    font-size: 15px;
+    bottom: 0; /* Atur posisi ke bawah */
+    width: 100%; /* Lebar footer mengisi seluruh lebar layar */
+}

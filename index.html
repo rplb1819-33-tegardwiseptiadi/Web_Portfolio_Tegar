@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOLIO | TEGAR DWI</title>
+    <!--LINK BOOTSTRAP  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- LINK FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="/src/css/styles.css" />
+  </head>
+  <body>
+    <!-- START NAVBAR -->
+    <!-- Navbar menggunakan flexbox -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-lg" style="background-color: #191f36; position: fixed; top: 0; width: 100%; z-index: 1000;">
+
+      <div class="container">
+        <a class="navbar-brand" href="#">TEGAR | PORTFOLIO</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-right" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#home">ABOUT ME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#myProject">MY PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#myHobbies">MY HOBBIES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- START BANNER -->
+    <div class="container-fluid banner">
+      <div class="container text-center">
+        <h4 class="display-6">WELCOME TO MY PORTFOLIO WEBSITE</h4>
+        <h3 class="display-1">Hallo !!</h3>
+        <a href="#home">
+          <button type="button" class="btn btn-lg">Read More</button>
+        </a>
+      </div>
+    </div>
+    <!-- END BANNER -->
+
+    <!-- SECTION ABOUT ME  -->
+    <!-- Section About Me menggunakan flexbox -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hi, my name is</h3>
+        <h1>Tegar Dwi Septiadi</h1>
+        <h3>And I'm a <span> Student At Gunadarma University</span></h3>
+        <p>
+          Perkenalkan Nama Saya Tegar Dwi Septiadi biasa dipanggil Tegar, saya
+          lahir di Bekasi 04 September 2002. Saya merupakan lulusan dari SMK
+          Negeri 1 Kota Bekasi angkatan 2021 jurusan Rekayasa Perangkat Lunak,
+          dan menjadi Mahasiswa Baru di Gunadarma jurusan Teknik Informatika
+          angkatan 2021. Saya juga mempunyai beberapa kegiatan yang sering saya
+          lakukan yaitu, SunMoRi (Sunday Morning Ride) dimana kegiatan ini saya
+          lakukan setiap pagi dengan berkendara motor bersama teman lama, bahkan
+          berjumpa teman baru dalam kegiatan tersebut. Selain itu ada hobi saya
+          lain yang tentunya dilakukan juga pada waktu senggang yakni koding
+          website menggunakan framework laravel 10.
+        </p>
+        <div class="social-media">
+          <a href="https://www.instagram.com/tegar_dwi_04/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://github.com/rplb1819-33-tegardwiseptiadi"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://youtube.com/@2ia23_tegardwiseptiadi8?si=AqTV6DEcvO7zc0--"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+        <a href="#" class="btn">Download MY CV</a>
+      </div>
+
+      <div class="home-img">
+        <img src="/src/images/me.JPG" alt="" />
+      </div>
+    </section>
+    <!-- AKHIR SECTION ABOUT ME  -->
+
+    <!-- START CONTENT MY PROJECT  -->
+    <!-- Section My Projects menggunakan grid system -->
+    <section id="myProject">
+      <div class="container-fluid myProject pt-5 pb-5">
+        <div class="container text-center">
+          <h2 class="display-3">MY PROJECTS</h2>
+          <h2>Since 2021</h2>
+          <div class="row pt-4 gx-4 gy-4">
+            <div class="col-md-4">
+              <div class="card-crop-img">
+                <img
+                  src="/src/images/myProject1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                  style="width: 200px; height: 200px; border-radius: 10px;"
+                />
+                <div class="card-body">
+                  <h2 class="card-title">SERTIFIKAT BNSP</h2>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-crop-img">
+                <img
+                  src="/src/images/myProject2.jpg"
+                  class="card-img-top"
+                  alt="..."
+                  style="width: 200px; height: 200px; border-radius: 10px;"
+                />
+                <div class="card-body">
+                  <h2 class="card-title">MEMBUAT WEBSITE RESTAURANT</h2> 
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-crop-img">
+                <img
+                  src="/src/images/myProject3.jpg"
+                  class="card-img-top"
+                  alt="..."
+                  style="width: 200px; height: 200px; border-radius: 10px;"
+                />
+                <div class="card-body">
+                  <h2 class="card-title">SERTIFIKAT PELATIHAN JAVASCRIPT</h2> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END CONTENT MY PROJECT -->
+
+    <!-- AWAL SECTION ABOUTME  -->
+    <section class="myHobbies" id="myHobbies">
+      <div class="container">
+        <div class="row pb-4">
+          <h2 class="heading text-center">MY HOBBIES</h2>
+          <div class="col-md-6">
+            <div class="myHobbies-img">
+              <img src="/src/images/myHobbies1.jpg" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="myHobbies-content">
+              <h2 class="heading text-center"><span>1.</span> Ngoding</h2>
+              <h3>Kegiatan Membuat Website</h3>
+              <p>
+                Saya adalah seorang penggemar pengembangan web full-stack,
+                khususnya dengan framework Laravel 10. Saya senang menghabiskan
+                waktu luang saya dengan membuat situs web yang dinamis dan
+                responsif. Selain itu, saya juga menikmati menciptakan program
+                desktop yang memberikan pengalaman pengguna yang unik dan
+                efisien.
+              </p>
+              <a href="#" class="btn mt-2">Read More</a>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="myHobbies-img">
+              <img src="/src/images/myHobbies2.jpg" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="myHobbies-content">
+              <h2 class="heading text-center"><span>2.</span> Sunmori</h2>
+              <h3>Kegiatan Motoran Di Minggu Pagi</h3>
+              <p>
+                Saya menikmati momen "sunmori" bersama teman-teman saya.
+                Menyusuri jalanan di pagi hari dengan motor kami, merasakan
+                angin segar yang menyegarkan, dan menikmati cahaya matahari yang
+                hangat adalah momen yang penuh kebahagiaan dan kebersamaan bagi
+                kami. Ini adalah waktu yang kami nantikan setiap minggu untuk
+                melepaskan penat dan menikmati keindahan alam bersama.
+              </p>
+              <a href="#" class="btn mt-2">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AKHIR SECTION ABOUTME  -->
+
+    <!-- START CONTENT CONTACT ME -->
+    <div class="container-fluid kontak pt-5 pb-5" id="contact">
+      <div class="container">
+        <h2 class="display-3 text-center">CONTACT</h2>
+        <h3 class="text-center pb-5">
+            "Bagian kontak ini memungkinkan Anda untuk terhubung langsung dengan saya. Saya senang mendengar pendapat, pertanyaan, atau tanggapan dari Anda terkait dengan portofolio dan proyek-proyek yang saya bagikan di sini. Jangan ragu untuk mengirimkan pesan melalui formulir kontak yang disediakan di bawah ini. Saya sangat menantikan untuk mendengar dari Anda!"
+        </h3>
+        <div class="row pb-3">
+          
+          <div class="col-md-6">
+            <!--Google map-->
+            <div id="map-container-google-2" class="z-depth-1-half map-container maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d781.3693824481144!2d106.96845180154213!3d-6.21218448958462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTInNDQuNCJTIDEwNsKwNTgnMDguMSJF!5e0!3m2!1sen!2sid!4v1709413308890!5m2!1sen!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!--Google Maps-->
+        </div>
+
+        <div class="col-md-6 pt-5">
+            <input
+              type="text"
+              class="form-control form-control-lg mb-3"
+              placeholder="Nama"
+            />
+            <input
+              type="text"
+              class="form-control form-control-lg mb-3"
+              placeholder="Email"
+            />
+            <input
+              type="text"
+              class="form-control form-control-lg mb-3"
+              placeholder="No Telp"
+            />
+            <div class="col-md-6 mx-auto text-center pt-3 pb-3">
+              <button type="button" class="btn btn-lg">KIRIM PESAN</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- END CONTENT CONTACT ME -->
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2024 TEGAR DWI SEPTIADI | PORTFOLIO</p>
+  </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
